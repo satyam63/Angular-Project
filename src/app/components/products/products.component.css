@@ -1,0 +1,51 @@
+img1 {
+    background-image: url(./iproduct.png);
+    background-image: url(./jewellery.png);
+    background-image: url(./gadgets.png);
+    background-image: url(./wardrobe.png);
+
+}
+
+.cart-top {
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: cornsilk;
+    background-clip: border-box;
+    position: relative;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: .25rem;
+
+}
+
+.items {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.itemdata {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch
+}
+.card{
+    padding: 20px;
+    margin: 0;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    background-color: rgb(57, 74, 233);
+}
+.card img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+
+}

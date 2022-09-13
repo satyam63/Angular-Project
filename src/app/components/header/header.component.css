@@ -1,0 +1,14 @@
+.form-control{
+    border-radius: 4px;
+    margin-left: 25px;
+    width: 500px;
+}
+.search-icon{
+    z-index: 10;
+    position: absolute;
+    right: 52%;
+    color: blue;
+    top: 35%;
+
+
+}

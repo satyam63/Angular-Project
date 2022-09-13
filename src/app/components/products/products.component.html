@@ -1,0 +1,49 @@
+<div class="cart-top container-fluid">
+    <div class="container d-flex">
+        <div class="items" >
+            <a routerLink="/products">
+                <img src="iproduct.png"  style="height:50px  ; " alt="">
+            
+            </a>
+            <h6>Product</h6>
+        </div>
+        <div class="items">
+            <a routerLink="/products/category/jewelery" >
+                <img src="jewellery.png"   style="height:50px;" alt="">
+            </a>
+            <h6>Jewellery</h6>
+        </div>
+        <div class="items">
+            <a routerLink="/products/category/electronics">
+                <img src="gadgets.png"   style="height:50px  ; " alt="">
+            
+            </a>
+            <h6>Electronics</h6>
+        </div>
+        <div class="items">
+            <a routerLink="/products/category/fashion" >
+                <img routerLink="/products/categoryy" src="wardrobe.png"  style="height:50px  ; " alt="">
+               
+            </a>
+            <h6>Fashion</h6>
+        </div>  
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList" >
+            <div class="card col-md-3">
+                <img src={{item.image}} alt="">
+
+                <h5 class="itemdata">{{item.title}}</h5>
+                <p>{{item.category}}</p>
+                <p><strong>Price-</strong>${{item.price}}</p>
+                <p class="itemdata">{{item.description}}</p>
+                <p></p>
+                <button class="btn btn-primary" (click)="addtoCart(item)">Add to cart</button>
+            </div>
+        </ng-container>
+       
+    </div>
+</div>
